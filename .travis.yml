@@ -1,7 +1,8 @@
 dist: trusty
 sudo: false
 language: node_js
-node_js: node
+node_js:
+- 8
 
 install:
 - npm ci
@@ -25,7 +26,7 @@ git:
   depth: 3
 
 after_success:
-  - npm run travis-deploy-once "npm run semantic release"
+  - npm run travis-deploy-once "npm run semantic-release"
 
 branches:
 except:
