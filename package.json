@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --base-href /angular-gdl-demo/ --prod",
+    "build": "ng build --base-href /angular-test-library/ --prod",
     "build-lib": "ng build angular-gdl",
     "test": "ng test",
     "lint": "ng lint",
