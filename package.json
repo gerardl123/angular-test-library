@@ -1,6 +1,6 @@
 {
   "name": "angular-gdl-demo",
-  "version": "0.0.0",
+  "version": "0.0.0-semantically-released",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +10,9 @@
     "lint": "ng lint",
     "lint-lib": "ng lint angular-gdl",
     "e2e": "ng e2e",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "travis-deploy-once": "travis-deploy-once --pro",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -50,6 +52,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^4.2.0",
     "protractor": "~5.4.0",
+    "semantic-release": "^15.13.24",
+    "travis-deploy-once": "^5.0.11",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.0",
@@ -71,5 +75,8 @@
       "pre-commit": "npm run lint && npm run lint-lib",
       "commit-msg": "commitlint --edit"
     }
+  },
+  "release": {
+    "pkgRoot": "dist/angular-gdl"
   }
 }
